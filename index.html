@@ -1,17 +1,86 @@
 <!DOCTYPE html>
-<html>
-    
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
+<body>
+  <div id="cutscene" class="cutscene">
+        <div class="cutscene-content">
+            <h1 class="cutscene-text">Welcome to my swimming journey</h1>
+        </div>
+  </div>
 
-  <body>
-
-   
-    <h1>My personal web site.</h1>
-    <p>Hello, world!</p>
       
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🏊 Swimming Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showPage(\'home\')" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showPage(\'bio\')" class="nav-link">Bio</a></li>
+                <li><a href="#" onclick="showPage(\'history\')" class="nav-link">History</a></li>
+                <li><a href="#" onclick="showPage(\'statistics\')" class="nav-link">Statistics</a></li>
+                <li><a href="#" onclick="showPage(\'services\')" class="nav-link">Services</a></li>
+            </ul>
+        </div>
+    </nav>
 
 
-  </body>
+    <!-- Swimming pool for ltr -->
+    <div id="home" class="page active">
+        <h1>Welcome</h1>
+        <p></p>
+    </div>
+
+
+    <div id="bio" class="page"></div>
+    <div id="history" class="page"></div>
+    <div id="statistics" class="page"></div>
+    <div id="services" class="page"></div>
+
+    <!-- JS for navigation -->
+        <script>
+        // Cutscene animation on page load
+        window.addEventListener('load', function() {
+            const cutscene = document.getElementById('cutscene');
+            const cutsceneText = document.querySelector('.cutscene-text');
+            
+            // Show cutscene for 2 seconds, then fade out
+            setTimeout(function() {
+                cutscene.classList.add('fade-out');
+                // Hide cutscene after fade animation
+                setTimeout(function() {
+                    cutscene.style.display = 'none';
+                }, 500);
+            }, 2000);
+        });
+
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+            
+            // Update active nav link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            // Find the link that corresponds to the pageId and set it as active
+            const activeLink = document.querySelector(`.nav-link[onclick*="'${pageId}'"`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
 </html>
