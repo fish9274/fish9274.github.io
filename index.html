@@ -30,11 +30,48 @@
 
 
     <!-- Swimming pool for ltr -->
+        <!-- HOME PAGE: Swimming Pool with Lane Names -->
     <div id="home" class="page active">
-        <h1>Welcome</h1>
-        <p></p>
+        <div class="pool-container">
+            <h1>Welcome to My Swimming Journey</h1>
+            
+            <!-- Bird\'s-eye view swimming pool -->
+            <div class="pool">
+                <!-- Lane 1 (top edge - empty) -->
+                <div class="lane lane-empty"></div>
+                <div class="lane-rope"></div>
+                
+                <!-- Lane 2 - BIO PAGE LINK -->
+                <div class="lane lane-clickable clickable" onclick="showPage(\'bio\')">
+                    <div class="lane-label lane-name">📋 Bio</div>
+                </div>
+                <div class="lane-rope"></div>
+                
+                <!-- Lane 3 - HISTORY PAGE LINK -->
+                <div class="lane lane-clickable clickable" onclick="showPage(\'history\')">
+                    <div class="lane-label lane-name">📅 History</div>
+                </div>
+                <div class="lane-rope"></div>
+                
+                <!-- Lane 4 - STATISTICS PAGE LINK -->
+                <div class="lane lane-clickable clickable" onclick="showPage(\'statistics\')">
+                    <div class="lane-label lane-name">📊 Stats</div>
+                </div>
+                <div class="lane-rope"></div>
+                
+                <!-- Lane 5 - SERVICES PAGE LINK -->
+                <div class="lane lane-clickable clickable" onclick="showPage(\'services\')">
+                    <div class="lane-label lane-name">🎯 Services</div>
+                </div>
+                <div class="lane-rope"></div>
+                
+                <!-- Lane 6 (bottom edge - empty) -->
+                <div class="lane lane-empty"></div>
+            </div>
+            
+            <p class="pool-description">Click on any of the middle 4 lanes to navigate to different sections of my swimming portfolio.</p>
+        </div>
     </div>
-
 
     <div id="bio" class="page"></div>
     <div id="history" class="page"></div>
