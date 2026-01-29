@@ -19,11 +19,11 @@
         <div class="nav-container">
             <div class="nav-logo">🏊 Swimming Portfolio</div>
             <ul class="nav-menu">
-                <li><a href="#" onclick="showPage(\'home\')" class="nav-link active">Home</a></li>
-                <li><a href="#" onclick="showPage(\'bio\')" class="nav-link">Bio</a></li>
-                <li><a href="#" onclick="showPage(\'history\')" class="nav-link">History</a></li>
-                <li><a href="#" onclick="showPage(\'statistics\')" class="nav-link">Statistics</a></li>
-                <li><a href="#" onclick="showPage(\'services\')" class="nav-link">Services</a></li>
+                <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showPage('bio')" class="nav-link">Bio</a></li>
+                <li><a href="#" onclick="showPage('history')" class="nav-link">History</a></li>
+                <li><a href="#" onclick="showPage('statistics')" class="nav-link">Statistics</a></li>
+                <li><a href="#" onclick="showPage('services')" class="nav-link">Services</a></li>
             </ul>
         </div>
     </nav>
@@ -42,25 +42,25 @@
                 <div class="lane-rope"></div>
                 
                 <!-- Lane 2 - BIO PAGE LINK -->
-                <div class="lane lane-clickable clickable" onclick="showPage(\'bio\')">
+                <div class="lane lane-clickable clickable" onclick="showPage('bio')">
                     <div class="lane-label lane-name">📋 Bio</div>
                 </div>
                 <div class="lane-rope"></div>
                 
                 <!-- Lane 3 - HISTORY PAGE LINK -->
-                <div class="lane lane-clickable clickable" onclick="showPage(\'history\')">
+                <div class="lane lane-clickable clickable" onclick="showPage('history')">
                     <div class="lane-label lane-name">📅 History</div>
                 </div>
                 <div class="lane-rope"></div>
                 
                 <!-- Lane 4 - STATISTICS PAGE LINK -->
-                <div class="lane lane-clickable clickable" onclick="showPage(\'statistics\')">
+                <div class="lane lane-clickable clickable" onclick="showPage('statistics')">
                     <div class="lane-label lane-name">📊 Stats</div>
                 </div>
                 <div class="lane-rope"></div>
                 
                 <!-- Lane 5 - SERVICES PAGE LINK -->
-                <div class="lane lane-clickable clickable" onclick="showPage(\'services\')">
+                <div class="lane lane-clickable clickable" onclick="showPage('services')">
                     <div class="lane-label lane-name">🎯 Services</div>
                 </div>
                 <div class="lane-rope"></div>
@@ -73,22 +73,242 @@
         </div>
     </div>
 
-    <div id="bio" class="page"></div>
-    <div id="history" class="page"></div>
-    <div id="statistics" class="page"></div>
-    <div id="services" class="page"></div>
+    <!-- BIO PAGE -->
+    <div id="bio" class="page">
+        <div class="bio-container">
+            <h1>About Me</h1>
+            <p>PLACEHOLDERS</p>
+        </div>
+    </div>
+
+    <!-- STATISTICS PAGE -->
+    <div id="statistics" class="page">
+        <div class="stats-container">
+            <h1>My Statistics</h1>
+            <p>PLACEHOLDERS</p>
+        </div>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page">
+        <div class="services-container">
+            <h1>Services</h1>
+            <p>PLACEHOLDERS</p>
+        </div>
+    </div>
+
+     <!-- HISTORY PAGE: Scrollable Timeline -->
+    <div id="history" class="page">
+        <div class="history-container">
+            <h1>My Swimming History</h1>
+            
+            <div class="timeline">
+                
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content">
+                        <h3>First Swimming Lesson</h3>
+                        <p>Started my swimming journey with my first swimming lesson. This was the beginning of a passion that would shape my life and athletic career.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: First Lesson%3C/text%3E%3C/svg%3E" alt="First lesson" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h3>COVID-19 & Beijing Training</h3>
+                        <p>Due to COVID-19, I was in Beijing where I trained under a national team coach. This experience elevated my training and I made swimming my main sport to focus on.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Beijing Training%3C/text%3E%3C/svg%3E" alt="Beijing" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>Joined PSC Competitive Club</h3>
+                        <p>Started training with the local competitive club PSC. This marked my entry into serious competitive swimming.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: PSC Club%3C/text%3E%3C/svg%3E" alt="PSC" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Athletic Honors Qualification</h3>
+                        <p>Qualified for the Athletic Honors, recognizing my dedication and improvement in competitive swimming.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Athletic Honors%3C/text%3E%3C/svg%3E" alt="Honors" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 (Early)</div>
+                    <div class="timeline-content">
+                        <h3>First ISF Pool Record - U13 200IM LC</h3>
+                        <p>Broke my first ISF pool record in the U13 200 Individual Medley Long Course with a time of 2:59. A significant milestone in my swimming career!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Pool Record%3C/text%3E%3C/svg%3E" alt="Record" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 (Nov)</div>
+                    <div class="timeline-content">
+                        <h3>Hong Kong Age Group LC Championships</h3>
+                        <p>Qualified for and competed in the Hong Kong age group LC championships for the first time, placing 22nd.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: HK Championships%3C/text%3E%3C/svg%3E" alt="HK Champs" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (Feb)</div>
+                    <div class="timeline-content">
+                        <h3>Hong Kong Age Group SC Championships</h3>
+                        <p>Competed in the Hong Kong age group SC (Short Course) championships again, improving to 17th place.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: SC Championships%3C/text%3E%3C/svg%3E" alt="SC Champs" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (Jun)</div>
+                    <div class="timeline-content">
+                        <h3>Intensive Training Camp - Hangzhou</h3>
+                        <p>Attended an intensive swimming training camp in Hangzhou to further develop my skills and technique.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Hangzhou Camp%3C/text%3E%3C/svg%3E" alt="Hangzhou" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (Aug)</div>
+                    <div class="timeline-content">
+                        <h3>Switched to Intensive Training Team</h3>
+                        <p>Transitioned to a more intensive training team within PSC to push myself further and compete at higher levels.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Intensive Team%3C/text%3E%3C/svg%3E" alt="Team" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (Oct)</div>
+                    <div class="timeline-content">
+                        <h3>HKSSF Champion</h3>
+                        <p>Won HKSSF championships in 2 individual events and 1 relay event. A major achievement in my competitive career!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: HKSSF Champion%3C/text%3E%3C/svg%3E" alt="Champion" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (Dec)</div>
+                    <div class="timeline-content">
+                        <h3>ACAMIS MVP - First Overseas Competition</h3>
+                        <p>Named ACAMIS MVP for the ISF swim team during my first overseas competition. An incredible honor!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: ACAMIS MVP%3C/text%3E%3C/svg%3E" alt="MVP" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Jan)</div>
+                    <div class="timeline-content">
+                        <h3>Division 1 Championships - Hong Kong Team Qualification</h3>
+                        <p>Competed in Division 1 championships, placing 6th and 12th in different events. Qualified for the Hong Kong team!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Division 1%3C/text%3E%3C/svg%3E" alt="Division 1" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Feb)</div>
+                    <div class="timeline-content">
+                        <h3>Hong Kong Age Group SC Championships</h3>
+                        <p>Competed in the Hong Kong age group SC championships, achieving 9th place. Continuous improvement!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: SC Champs 2025%3C/text%3E%3C/svg%3E" alt="SC 2025" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Jun)</div>
+                    <div class="timeline-content">
+                        <h3>Intensive Training Camp - Hangzhou (Injury Period)</h3>
+                        <p>Attended another intensive training camp in Hangzhou. Unfortunately, sustained injuries: lateral meniscus tear, shoulder overuse injury, and elbow tendonitis. A challenging period of recovery and rehabilitation.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Training Camp 2025%3C/text%3E%3C/svg%3E" alt="Camp 2025" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Sep)</div>
+                    <div class="timeline-content">
+                        <h3>Qualified for National Level 1 Swimmer</h3>
+                        <p>After recovery from my injuries, qualified for national level 1 swimmer status. A testament to my resilience and dedication!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: National Level 1%3C/text%3E%3C/svg%3E" alt="National" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Oct)</div>
+                    <div class="timeline-content">
+                        <h3>HKSSF Division 1 Finals Qualification</h3>
+                        <p>Qualified for HKSSF Division 1 finals with placements of 5th, 6th, and 8th in different events.</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Division 1 Finals%3C/text%3E%3C/svg%3E" alt="Finals" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Nov)</div>
+                    <div class="timeline-content">
+                        <h3>Hong Kong Age Group LC Championships - 4th Place</h3>
+                        <p>Competed in the Hong Kong age group LC championships and achieved 4th place. Getting closer to the podium!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDERg' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: LC Championships%3C/text%3E%3C/svg%3E" alt="LC Champs" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Dec)</div>
+                    <div class="timeline-content">
+                        <h3>ACAMIS Senior Record Broken - Boys 4x50 Medley Relay</h3>
+                        <p>Broke the ACAMIS senior record in the Boys 4x50 Medley Relay. A significant achievement for the team and myself!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Relay Record%3C/text%3E%3C/svg%3E" alt="Record" class="timeline-image">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026 (Jan)</div>
+                    <div class="timeline-content">
+                        <h3>Return from Injury - New Beginnings</h3>
+                        <p>I have returned from my injury period, and our trip down memory lane ends here. Looking forward to many more swim meets and hopefully achieving my first podium stand in the championships!</p>
+
+                        <img src="data:image/svg+xml,%3Csvg xmlns='PLACEHOLDER' width='200' height='150'%3E%3Crect fill='%23e0e0e0' width='200' height='150'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23999'%3EPhoto: Future Goals%3C/text%3E%3C/svg%3E" alt="Future" class="timeline-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS for navigation -->
-        <script>
-        // Cutscene animation on page load
-        window.addEventListener('load', function() {
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
             const cutscene = document.getElementById('cutscene');
-            const cutsceneText = document.querySelector('.cutscene-text');
             
-            // Show cutscene for 2 seconds, then fade out
+            // Set loading time for splash screen (2 seconds)
             setTimeout(function() {
+                // Hide splash screen with fade-out animation
                 cutscene.classList.add('fade-out');
-                // Hide cutscene after fade animation
+                // Remove splash screen from DOM after fade animation completes
                 setTimeout(function() {
                     cutscene.style.display = 'none';
                 }, 500);
