@@ -156,30 +156,190 @@
             <h1>Swimming Statistics</h1>
             
             <div class="stats-grid">
-                <!-- Chart 1: Performance Over Time -->
+                 <!-- Chart 1: Event Times Over Years ) -->
                 <div class="stat-card">
-                    <!--TO BE COMPLETED-->
+                    <h2>Event Times Over Years (2020-2025)</h2>
+                    <svg viewBox="0 0 600 350" class="chart-svg">
+                        <!-- Grid lines -->
+                        <line x1="60" y1="300" x2="580" y2="300" stroke="#ddd" stroke-width="1"/>
+                        <line x1="60" y1="250" x2="580" y2="250" stroke="#ddd" stroke-width="1"/>
+                        <line x1="60" y1="200" x2="580" y2="200" stroke="#ddd" stroke-width="1"/>
+                        <line x1="60" y1="150" x2="580" y2="150" stroke="#ddd" stroke-width="1"/>
+                        <line x1="60" y1="100" x2="580" y2="100" stroke="#ddd" stroke-width="1"/>
+                        <line x1="60" y1="50" x2="580" y2="50" stroke="#ddd" stroke-width="1"/>
+                        
+                        <!-- Axes -->
+                        <line x1="60" y1="300" x2="580" y2="300" stroke="#333" stroke-width="2"/>
+                        <line x1="60" y1="300" x2="60" y2="20" stroke="#333" stroke-width="2"/>
+                        
+                        <!-- 200 Fly (243, 200, 189, 167, 150, 133) -->
+                        <polyline points="90,120 180,160 270,175 360,210 450,240 540,270" fill="none" stroke="#4a9eff" stroke-width="3"/>
+                        <circle cx="90" cy="120" r="4" fill="#4a9eff"/>
+                        <circle cx="180" cy="160" r="4" fill="#4a9eff"/>
+                        <circle cx="270" cy="175" r="4" fill="#4a9eff"/>
+                        <circle cx="360" cy="210" r="4" fill="#4a9eff"/>
+                        <circle cx="450" cy="240" r="4" fill="#4a9eff"/>
+                        <circle cx="540" cy="270" r="4" fill="#4a9eff"/>
+                        
+                        <!-- 200 Breast (380, 301, 296, 235, 165, 150) -->
+                        <polyline points="90,50 180,120 270,130 360,200 450,280 540,300" fill="none" stroke="#ff6b6b" stroke-width="3"/>
+                        <circle cx="90" cy="50" r="4" fill="#ff6b6b"/>
+                        <circle cx="180" cy="120" r="4" fill="#ff6b6b"/>
+                        <circle cx="270" cy="130" r="4" fill="#ff6b6b"/>
+                        <circle cx="360" cy="200" r="4" fill="#ff6b6b"/>
+                        <circle cx="450" cy="280" r="4" fill="#ff6b6b"/>
+                        <circle cx="540" cy="300" r="4" fill="#ff6b6b"/>
+                        
+                        <!-- 400 IM (504, 425, 412, 380, 355, 295) -->
+                        <polyline points="90,30 180,90 270,105 360,145 450,170 540,245" fill="none" stroke="#51cf66" stroke-width="3"/>
+                        <circle cx="90" cy="30" r="4" fill="#51cf66"/>
+                        <circle cx="180" cy="90" r="4" fill="#51cf66"/>
+                        <circle cx="270" cy="105" r="4" fill="#51cf66"/>
+                        <circle cx="360" cy="145" r="4" fill="#51cf66"/>
+                        <circle cx="450" cy="170" r="4" fill="#51cf66"/>
+                        <circle cx="540" cy="245" r="4" fill="#51cf66"/>
+                        
+                        <!-- X-axis labels -->
+                        <text x="90" y="320" text-anchor="middle" font-size="12" fill="#333">2020</text>
+                        <text x="180" y="320" text-anchor="middle" font-size="12" fill="#333">2021</text>
+                        <text x="270" y="320" text-anchor="middle" font-size="12" fill="#333">2022</text>
+                        <text x="360" y="320" text-anchor="middle" font-size="12" fill="#333">2023</text>
+                        <text x="450" y="320" text-anchor="middle" font-size="12" fill="#333">2024</text>
+                        <text x="540" y="320" text-anchor="middle" font-size="12" fill="#333">2025</text>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="50" y="305" text-anchor="end" font-size="11" fill="#666">0</text>
+                        <text x="50" y="255" text-anchor="end" font-size="11" fill="#666">100</text>
+                        <text x="50" y="205" text-anchor="end" font-size="11" fill="#666">200</text>
+                        <text x="50" y="155" text-anchor="end" font-size="11" fill="#666">300</text>
+                        <text x="50" y="105" text-anchor="end" font-size="11" fill="#666">400</text>
+                        <text x="50" y="55" text-anchor="end" font-size="11" fill="#666">500</text>
+                        
+                        <!-- Legend -->
+                        <rect x="300" y="10" width="280" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="4"/>
+                        <line x1="310" y1="22" x2="330" y2="22" stroke="#4a9eff" stroke-width="2"/>
+                        <text x="340" y="26" font-size="12" fill="#333">200 Fly</text>
+                        <line x1="420" y1="22" x2="440" y2="22" stroke="#ff6b6b" stroke-width="2"/>
+                        <text x="450" y="26" font-size="12" fill="#333">200 Breast</text>
+                        <line x1="310" y1="38" x2="330" y2="38" stroke="#51cf66" stroke-width="2"/>
+                        <text x="340" y="42" font-size="12" fill="#333">400 IM</text>
+                    </svg>
+                    <p>Tracking improvement in three main events: 200 Fly, 200 Breast, and 400 IM. Times are in seconds.</p>
                 </div>
 
                 <!-- Chart 2: Stroke Distribution -->
                 <div class="stat-card">
                     <h2>Stroke Distribution</h2>
-                    <div class="chart-placeholder">
-                        <svg viewBox="0 0 200 200" class="pie-chart">
-                            <circle cx="100" cy="100" r="80" fill="none" stroke="#4a9eff" stroke-width="30" stroke-dasharray="125.6 502.4"/>
-                            <circle cx="100" cy="100" r="80" fill="none" stroke="#ff6b6b" stroke-width="30" stroke-dasharray="125.6 502.4" transform="rotate(90 100 100)"/>
-                            <circle cx="100" cy="100" r="80" fill="none" stroke="#51cf66" stroke-width="30" stroke-dasharray="125.6 502.4" transform="rotate(180 100 100)"/>
-                            <circle cx="100" cy="100" r="80" fill="none" stroke="#ffd43b" stroke-width="30" stroke-dasharray="125.6 502.4" transform="rotate(270 100 100)"/>
-                            <text x="100" y="105" text-anchor="middle" font-size="14" font-weight="bold">Strokes</text>
-                        </svg>
-                    </div>
-                    <p>[Freestyle 25%, Backstroke 10%, Breaststroke 30%, Butterfly 35%]</p>
+                    <svg viewBox="0 0 400 300" class="chart-svg">
+                        <!-- Butterfly (35%) - Blue -->
+                        <circle cx="150" cy="120" r="80" fill="none" stroke="#4a9eff" stroke-width="25" stroke-dasharray="175.93 502.65" stroke-dashoffset="0"/>
+                        
+                        <!-- Breaststroke (30%) - Red -->
+                        <circle cx="150" cy="120" r="80" fill="none" stroke="#ff6b6b" stroke-width="25" stroke-dasharray="150.80 502.65" stroke-dashoffset="-175.93"/>
+                        
+                        <!-- Freestyle (25%) - Green -->
+                        <circle cx="150" cy="120" r="80" fill="none" stroke="#51cf66" stroke-width="25" stroke-dasharray="125.66 502.65" stroke-dashoffset="-326.73"/>
+                        
+                        <!-- Backstroke (10%) - Yellow -->
+                        <circle cx="150" cy="120" r="80" fill="none" stroke="#ffd43b" stroke-width="25" stroke-dasharray="50.27 502.65" stroke-dashoffset="-452.39"/>
+                        
+                        <!-- Center circle for doughnut effect -->
+                        <circle cx="150" cy="120" r="50" fill="white"/>
+                        <text x="150" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Strokes</text>
+                        
+                        <!-- Legend -->
+                        <g>
+                            <rect x="250" y="30" width="140" height="140" fill="white" stroke="#ddd" stroke-width="1" rx="4"/>
+                            
+                            <!-- Butterfly -->
+                            <rect x="260" y="40" width="12" height="12" fill="#4a9eff"/>
+                            <text x="280" y="48" font-size="12" fill="#333">Butterfly 35%</text>
+                            
+                            <!-- Breaststroke -->
+                            <rect x="260" y="65" width="12" height="12" fill="#ff6b6b"/>
+                            <text x="280" y="73" font-size="12" fill="#333">Breaststroke 30%</text>
+                            
+                            <!-- Freestyle -->
+                            <rect x="260" y="90" width="12" height="12" fill="#51cf66"/>
+                            <text x="280" y="98" font-size="12" fill="#333">Freestyle 25%</text>
+                            
+                            <!-- Backstroke -->
+                            <rect x="260" y="115" width="12" height="12" fill="#ffd43b"/>
+                            <text x="280" y="123" font-size="12" fill="#333">Backstroke 10%</text>
+                        </g>
+                    </svg>
+                    <p>Your training focus across different swimming strokes: Butterfly (35%), Breaststroke (30%), Freestyle (25%), and Backstroke (10%).</p>
                 </div>
 
-                <!-- Chart 3: Training Intensity -->
+                <!-- Chart 3: Weekly Training Intensity and Distance -->
                 <div class="stat-card">
-                    <!--TO BE COMPLETED-->
+                    <h2>Weekly Training Schedule</h2>
+                    <svg viewBox="0 0 700 350" class="chart-svg">
+                        <!-- Grid lines -->
+                        <line x1="70" y1="280" x2="680" y2="280" stroke="#ddd" stroke-width="1"/>
+                        <line x1="70" y1="240" x2="680" y2="240" stroke="#ddd" stroke-width="1"/>
+                        <line x1="70" y1="200" x2="680" y2="200" stroke="#ddd" stroke-width="1"/>
+                        <line x1="70" y1="160" x2="680" y2="160" stroke="#ddd" stroke-width="1"/>
+                        <line x1="70" y1="120" x2="680" y2="120" stroke="#ddd" stroke-width="1"/>
+                        <line x1="70" y1="80" x2="680" y2="80" stroke="#ddd" stroke-width="1"/>
+                        
+                        <!-- Axes -->
+                        <line x1="70" y1="280" x2="680" y2="280" stroke="#333" stroke-width="2"/>
+                        <line x1="70" y1="280" x2="70" y2="40" stroke="#333" stroke-width="2"/>
+                        
+                        <!-- Monday: Intensity 6, Distance 3 -->
+                        <rect x="80" y="208" width="18" height="72" fill="#4a9eff"/>
+                        <rect x="102" y="244" width="18" height="36" fill="#51cf66"/>
+                        
+                        <!-- Tuesday: Intensity 6, Distance 3 -->
+                        <rect x="130" y="208" width="18" height="72" fill="#4a9eff"/>
+                        <rect x="152" y="244" width="18" height="36" fill="#51cf66"/>
+                        
+                        <!-- Wednesday: Intensity 6, Distance 3 -->
+                        <rect x="180" y="208" width="18" height="72" fill="#4a9eff"/>
+                        <rect x="202" y="244" width="18" height="36" fill="#51cf66"/>
+                        
+                        <!-- Thursday: Intensity 7, Distance 4 -->
+                        <rect x="230" y="196" width="18" height="84" fill="#4a9eff"/>
+                        <rect x="252" y="232" width="18" height="48" fill="#51cf66"/>
+                        
+                        <!-- Friday: Intensity 7, Distance 4 -->
+                        <rect x="280" y="196" width="18" height="84" fill="#4a9eff"/>
+                        <rect x="302" y="232" width="18" height="48" fill="#51cf66"/>
+                        
+                        <!-- Saturday: Intensity 11, Distance 8 -->
+                        <rect x="330" y="116" width="18" height="164" fill="#4a9eff"/>
+                        <rect x="352" y="184" width="18" height="96" fill="#51cf66"/>
+                        
+                        <!-- Sunday: Intensity 8, Distance 5 -->
+                        <rect x="380" y="184" width="18" height="96" fill="#4a9eff"/>
+                        <rect x="402" y="220" width="18" height="60" fill="#51cf66"/>
+                        
+                        <!-- X-axis labels -->
+                        <text x="91" y="300" text-anchor="middle" font-size="12" fill="#333">Mon</text>
+                        <text x="141" y="300" text-anchor="middle" font-size="12" fill="#333">Tue</text>
+                        <text x="191" y="300" text-anchor="middle" font-size="12" fill="#333">Wed</text>
+                        <text x="241" y="300" text-anchor="middle" font-size="12" fill="#333">Thu</text>
+                        <text x="291" y="300" text-anchor="middle" font-size="12" fill="#333">Fri</text>
+                        <text x="341" y="300" text-anchor="middle" font-size="12" fill="#333">Sat</text>
+                        <text x="391" y="300" text-anchor="middle" font-size="12" fill="#333">Sun</text>
+                        
+                        <!-- Y-axis labels (left side - Intensity) -->
+                        <text x="60" y="285" text-anchor="end" font-size="11" fill="#666">0</text>
+                        <text x="60" y="245" text-anchor="end" font-size="11" fill="#666">5</text>
+                        <text x="60" y="205" text-anchor="end" font-size="11" fill="#666">10</text>
+                        <text x="60" y="85" text-anchor="end" font-size="11" fill="#666">15</text>
+                        
+                        <!-- Legend -->
+                        <rect x="450" y="50" width="220" height="70" fill="white" stroke="#ddd" stroke-width="1" rx="4"/>
+                        <rect x="460" y="60" width="12" height="12" fill="#4a9eff"/>
+                        <text x="480" y="68" font-size="12" fill="#333">Intensity (out of 10)</text>
+                        <rect x="460" y="85" width="12" height="12" fill="#51cf66"/>
+                        <text x="480" y="93" font-size="12" fill="#333">Distance (km)</text>
+                    </svg>
+                    <p>Daily training intensity (out of 10) and distance covered (km) throughout the week. Peak training on Saturday!</p>
                 </div>
+
 
                 <!-- Chart 4: Personal best-->
                 <div class="stat-card">
