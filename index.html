@@ -23,7 +23,7 @@
                 <li><a href="#" onclick="showPage('bio')" class="nav-link">Bio</a></li>
                 <li><a href="#" onclick="showPage('history')" class="nav-link">History</a></li>
                 <li><a href="#" onclick="showPage('statistics')" class="nav-link">Statistics</a></li>
-                <li><a href="#" onclick="showPage('services')" class="nav-link">Services</a></li>
+                <li><a href="#" onclick="showPage('WIP')" class="nav-link">WIP</a></li>
             </ul>
         </div>
     </nav>
@@ -152,17 +152,130 @@
 
     <!-- STATISTICS PAGE -->
     <div id="statistics" class="page">
-        <div class="stats-container">
-            <h1>My Statistics</h1>
-            <p>PLACEHOLDERS</p>
+        <div class="statistics-container">
+            <h1>Swimming Statistics</h1>
+            
+            <div class="stats-grid">
+                <!-- Chart 1: Performance Over Time -->
+                <div class="stat-card">
+                    <!--TO BE COMPLETED-->
+                </div>
+
+                <!-- Chart 2: Stroke Distribution -->
+                <div class="stat-card">
+                    <h2>Stroke Distribution</h2>
+                    <div class="chart-placeholder">
+                        <svg viewBox="0 0 200 200" class="pie-chart">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#4a9eff" stroke-width="30" stroke-dasharray="125.6 502.4"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#ff6b6b" stroke-width="30" stroke-dasharray="125.6 502.4" transform="rotate(90 100 100)"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#51cf66" stroke-width="30" stroke-dasharray="125.6 502.4" transform="rotate(180 100 100)"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#ffd43b" stroke-width="30" stroke-dasharray="125.6 502.4" transform="rotate(270 100 100)"/>
+                            <text x="100" y="105" text-anchor="middle" font-size="14" font-weight="bold">Strokes</text>
+                        </svg>
+                    </div>
+                    <p>[Freestyle 25%, Backstroke 10%, Breaststroke 30%, Butterfly 35%]</p>
+                </div>
+
+                <!-- Chart 3: Training Intensity -->
+                <div class="stat-card">
+                    <!--TO BE COMPLETED-->
+                </div>
+
+                <!-- Chart 4: Personal best-->
+                <div class="stat-card">
+                    <h2>Personal Bests</h2>
+                    <div class="stat-details">
+                        <div class="stat-row">
+                            <span class="stat-name">100 IM</span>
+                            <span class="stat-number">1:02.17</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">200 IM</span>
+                            <span class="stat-number">2:14.66</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">100 Fly</span>
+                            <span class="stat-number">59.98</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">100 Breast</span>
+                            <span class="stat-number">1:08.98</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">400 IM</span>
+                            <span class="stat-number">4:54.65</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">200 Fly</span>
+                            <span class="stat-number">2:13.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Chart 5: Random stats-->
+                <div class="stat-card">
+                    <h2>Statistics</h2>
+                    <div class="stat-details">
+                        <div class="stat-row">
+                            <span class="stat-name">Total competitions</span>
+                            <span class="stat-number"></span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">Medals Won</span>
+                            <span class="stat-number">>100</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name"></span>
+                            <span class="stat-number"></span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">Silver Medals:</span>
+                            <span class="stat-number"></span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">Bronze Medals:</span>
+                            <span class="stat-number"></span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-name">Total Distance Swum in the past year:</span>
+                            <span class="stat-number"> >1460 km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart 6: Achievements -->
+                <div class="stat-card">
+                    <h2>🏆 Achievements</h2>
+                    <div class="achievements-list">
+                        <div class="achievement">
+                            <span class="achievement-icon">🥇</span>
+                            <span class="achievement-text">[NCAA AAAA swimmer]</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement-icon">🥇</span>
+                            <span class="achievement-text">[國家一級運動員]</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement-icon">🥇</span>
+                            <span class="achievement-text">[PLACEHOLDER]</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement-icon">🥇</span>
+                            <span class="achievement-text">[PLACEHOLDER]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <!-- WIP PAGE -->
     <div id="WIP" class="page">
         <div class="services-container">
-            <h1>WIP/h1>
-            <p>!SORRY! This page is currently work in progress 😔, check back later for more</p>
+            <h1>WIP</h1>
+            <p>⚠️SORRY⚠️ This page is currently work in progress 😔, check back later for more</p>
         </div>
     </div>
 
@@ -368,7 +481,7 @@
     </div>
 
 
-    <!-- JS for navigation -->
+    <!--JS-->
     <script> 
         document.addEventListener('DOMContentLoaded', function() {
             const cutscene = document.getElementById('cutscene');
